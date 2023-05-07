@@ -1,0 +1,48 @@
+[
+    {
+        "id" : 1,
+        "title" : "Whay1",
+        "img" : "/assets/images/shopimg/whay.jpeg",
+        "slug" : "whay-1",
+        "price" : 700,
+        "weight" : 5,
+        "available" : true
+    },
+    {
+        "id" : 2,
+        "title" : "Whay2",
+        "img" : "/assets/images/shopimg/whay.jpeg",
+        "slug" : "whay-2",
+        "price" : 600,
+        "weight" : 2,
+        "available" : false
+    },
+    {
+        "id" : 3,
+        "title" : "Whay3",
+        "img" : "/assets/images/shopimg/whay.jpeg",
+        "slug" : "whay-3",
+        "price" : 500,
+        "weight" : 4,
+        "available" : true
+    },
+    {
+        "id" : 4,
+        "title" : "Whay4",
+        "img" : "/assets/images/shopimg/whay.jpeg",
+        "slug" : "whay-4",
+        "price" : 400,
+        "weight" : 3,
+        "available" : false
+    },
+    {
+        "id" : 5,
+        "title" : "Whay5",
+        "img" : "/assets/images/shopimg/whay.jpeg",
+        "slug" : "whay-5",
+        "price" : 350,
+        "weight" : 3,
+        "available" : true
+    }
+
+]
