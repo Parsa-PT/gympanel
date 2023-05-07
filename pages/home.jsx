@@ -1,7 +1,6 @@
 import { useState ,useEffect } from "react";
 import jsPDF from "jspdf";
 import 'jspdf-autotable'
-import Layout from "../components/Layout";
 import html2canvas from "html2canvas";
 import Notification from "@/components/notification";
 import AOS from 'aos';

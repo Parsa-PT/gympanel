@@ -1,7 +1,7 @@
 import React, { useState , useRef } from "react";
 import Layout from "@/components/Layout";
 import profileIMG from "../public/assets/images/166yearsold.jpeg";
-import { FaUserEdit, FaFolderPlus, FaUpload } from "react-icons/fa";
+import { FaUserEdit} from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import Previews from "@/components/Previews";
 import Image from "next/image";
