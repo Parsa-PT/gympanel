@@ -15,11 +15,11 @@ const Products = () => {
         {productsItem.map((item ,id)=>{
             return (
                 <div key={id} className="group/item  w-full h-full  shadow-xl shadow-[#303df289] hover:shadow-none  pb-5 transition-all ease-out duration-300  bg-gradient-to-b from-[#303df2] to-[#c3d7f7]">
-                <div className=" w-full relative h-[55%] group-hover/item:scale-90 overflow-hidden shadow-xl transition-all ease-out duration-300  group-hover/item:rounded-2xl mb-3 ">
+                <div className=" w-full relative h-[55%] group-hover/item:scale-90 overflow-hidden shadow-xl transition-all ease-out duration-300  group-hover/item:rounded-2xl mb-6 md:mb-2 ">
                   <Image  alt="whay"  width={500} height={0} src={item.img} />
                 </div>
                 <div className=" w-full md:h-1/2 flex justify-center items-center flex-col">
-                  <h1 className=" text-4xl mb-2">{item.title}</h1>
+                  <h1 className=" text-4xl mb-7 md:mb-2">{item.title}</h1>
                   <div className=" flex justify-center flex-col items-center ">
 
                 <Link href={`/product/${item.slug}`}>

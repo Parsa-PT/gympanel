@@ -70,15 +70,15 @@ const productPage = () => {
 
           <div className="flex w-full mb-6 justify-around">
             <span>
-              <p className=" text-2xl">قیمت : {product.price}</p>
+              <p className=" text-xl md:text-2xl">قیمت : {product.price}</p>
             </span>
             <span>
-              <p className=" text-2xl">وزن : 3kg</p>
+              <p className=" text-xl md:text-2xl">وزن : 3kg</p>
             </span>
           </div>
-          <div className="flex w-full mb-6 justify-around">
+          <div className="flex flex-col md:flex-row w-full mb-6 justify-around">
             <span>
-              <p className=" text-2xl">
+              <p className=" text-xl md:text-2xl">
                 {" "}
                 در انبار :
                 {product.available ? (
@@ -89,7 +89,7 @@ const productPage = () => {
               </p>
             </span>
             <span>
-              <p className=" text-2xl">توضیحات : whay protein</p>
+              <p className=" text-xl md:text-2xl">توضیحات : whay protein</p>
             </span>
           </div>
           <div className=" flex w-full mb-4 justify-center">
