@@ -16,7 +16,7 @@ const Layout = ({ children ,title }) => {
       <header className=" relative">
         <SideNavbar />
         <div className=" absolute flex justify-end -z-10  w-full">
-          <Image className="w-[7rem] md:w-[10rem]" src={logo} />
+          <Image className="w-[6rem] md:w-[10rem]" src={logo} />
         </div>
       </header>
       <main
