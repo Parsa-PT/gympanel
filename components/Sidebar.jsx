@@ -20,6 +20,10 @@ const SideNavbar = () => {
     setMenu(menu = !menu);
   };
 
+  const leaveHandler = ()=>{
+    localStorage.clear();
+    window.location.reload();
+  }
 
   return (
     <div>
@@ -49,6 +53,7 @@ const SideNavbar = () => {
             <Image
               className=" w-[100px] h-[100px] absolute -top-5 rounded-full object-cover "
               src={profile}
+              alt="profile"
             />
           </div>
 
@@ -57,7 +62,7 @@ const SideNavbar = () => {
             <hr className=" bg-black h-1 rounded-md w-1/2 mb-2" />
             <h3>09357676767</h3>
             <div className="flex">
-              <BiLogOut className="ml-1 cursor-pointer hover:text-red-600" />
+              <BiLogOut onClick={leaveHandler} className="ml-1 cursor-pointer hover:text-red-600" />
               <Link href="/profile">
                 {" "}
                 <FaUserEdit className=" cursor-pointer" />{" "}
@@ -114,7 +119,7 @@ const SideNavbar = () => {
           </ul>
         </div>
 
-        <div className=" w-full p-2  pt-3 bg-slate-100    flex cursor-pointer shadow-md group">
+        <div  onClick={leaveHandler}  className=" w-full p-2  pt-3 bg-slate-100    flex cursor-pointer shadow-md group">
           <BiLogOut className="ml-1 w-5 group-hover:text-red-500 h-6" />
           <button className="text-lg">خروج از حساب</button>
         </div>
@@ -199,9 +204,9 @@ const SideNavbar = () => {
           </ul>
         </div>
 
-        <div className=" w-full p-2  pt-3 bg-slate-100    flex cursor-pointer shadow-md group">
+        <div onClick={leaveHandler} className=" w-full p-2  pt-3 bg-slate-100    flex cursor-pointer shadow-md group">
           <BiLogOut className="ml-1 w-5 group-hover:text-red-500 h-6" />
-          <button className="text-lg">خروج از حساب</button>
+          <button  className="text-lg">خروج از حساب</button>
         </div>
       </div>
                   
