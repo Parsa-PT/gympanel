@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState , useEffect } from "react";
 import { ImParagraphRight } from "react-icons/im";
 import { ImHome, ImUser } from "react-icons/im";
 import { CgGym } from "react-icons/cg";
@@ -10,11 +10,20 @@ import profile from "../public/assets/images/166yearsold.jpeg";
 import Link from "next/link";
 import Image from "next/image";
 import { Store } from "@/context/cart";
+import { useRouter } from "next/router";
 
 const SideNavbar = () => {
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
   let [menu, setMenu] = useState(false);
+  let [name , setName]= useState()
+  const {push} = useRouter()
+
+  useEffect(()=>{
+    const userName = localStorage.getItem('userName');
+    setName(userName);
+  },[])
+  
 
   const openMenu = () => {
     setMenu(menu = !menu);
@@ -22,7 +31,8 @@ const SideNavbar = () => {
 
   const leaveHandler = ()=>{
     localStorage.clear();
-    window.location.reload();
+    // window.location.reload();
+    push('/register/signup')
   }
 
   return (
@@ -58,7 +68,7 @@ const SideNavbar = () => {
           </div>
 
           <div className="w-full flex justify-center items-center flex-col">
-            <h2>اقا رضا</h2>
+            <h2>{name}</h2>
             <hr className=" bg-black h-1 rounded-md w-1/2 mb-2" />
             <h3>09357676767</h3>
             <div className="flex">

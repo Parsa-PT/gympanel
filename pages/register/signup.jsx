@@ -3,6 +3,7 @@ import Gymphoto from "../../public/assets/images/5-Reasons-Why-Your-Residential-
 import { useForm } from "react-hook-form";
 import Image from "next/image";
 import logo from "../../public/assets/images/logo/fitness-and-gym-logo-free-png.png";
+import { useRouter } from "next/router";
 
 const Signup = () => {
   const {
@@ -11,8 +12,15 @@ const Signup = () => {
     formState: { errors },
   } = useForm();
 
-  const fromHandler = ({ email, password, fristname, lastname, username }) => {
-    console.log(email);
+  const {push} = useRouter()
+
+  const formHandler = ({ email, password, fristname, lastname, username }) => {
+    push('/register/login')
+    localStorage.setItem("fristname" , fristname)
+    localStorage.setItem("lastname" , lastname)
+    localStorage.setItem('userName', username);
+   
+
   };
 
   return (
@@ -47,7 +55,7 @@ const Signup = () => {
             <div className=" w-full  md:w-1/2 px-20 md:px-16 py-14">
               <h1 className=" text-xl">ساخت اکانت</h1>
               <p>اکانت خود را فقط در چند دقیقه بسازید</p>
-              <form onSubmit={handleSubmit(fromHandler)}>
+              <form onSubmit={handleSubmit(formHandler)}>
                 <div className="grid grid-cols-2 gap-4 ">
                   <input
                     className=" bg-slate-500 p-1 text-sm md:text-lg rounded-md outline-none mb-3 border focus:border-white"

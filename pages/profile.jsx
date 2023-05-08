@@ -1,4 +1,4 @@
-import React, { useState , useRef } from "react";
+import React, { useState , useRef , useEffect } from "react";
 import Layout from "@/components/Layout";
 import profileIMG from "../public/assets/images/166yearsold.jpeg";
 import { FaUserEdit} from "react-icons/fa";
@@ -10,6 +10,18 @@ const Profile = () => {
   const [openPhoto  , setOpenPhoto] = useState(false)
   const inputRef = useRef()
 
+  let [Fname , setFName]= useState()
+  let [Lname , setLName]= useState()
+  let [Uname , setUName]= useState()
+
+  useEffect(()=>{
+    const fristname = localStorage.getItem('fristname');
+    const lastname = localStorage.getItem('lastname');
+    const userName = localStorage.getItem('userName');
+    setFName(fristname);
+    setLName(lastname);
+    setUName(userName);
+  },[])
   const {
     register,
     handleSubmit,
@@ -19,14 +31,14 @@ const Profile = () => {
   const handleData = (data)=>{
     console.table(data)
   }
-  // const handleDragOver = (e)=>{
+  const handleDragOver = (e)=>{
     
    
-  // }
-  // const handleOnDrag = (e)=>{
+  }
+  const handleOnDrag = (e)=>{
    
-  //   console.log(e)
-  // }
+    console.log(e)
+  }
 
   const handleClick = ()=>{
     inputRef.current()
@@ -51,7 +63,7 @@ const Profile = () => {
             <input
               className=" md:text-xl cursor-not-allowed  bg-slate-500 p-1 rounded-md outline-none mb-3 border focus:border-white"
               type="text"
-              value="اقا"
+              value={Fname}
               disabled
             />
             <div className=" flex justify-center">
@@ -61,7 +73,7 @@ const Profile = () => {
             <input
               className=" md:text-xl grid-cols-2 cursor-not-allowed  bg-slate-500 p-1 rounded-md outline-none mb-3 border focus:border-white"
               type="text"
-              value="رضا"
+              value={Lname}
               disabled
             />
             <div className=" flex justify-center">
@@ -70,7 +82,7 @@ const Profile = () => {
             <input
               className=" md:text-xl bg-slate-500 cursor-not-allowed  p-1 rounded-md outline-none mb-3 border focus:border-white"
               type="text"
-              value="اقا رضا"
+              value={Uname}
               disabled
             />
             <div className=" flex justify-center">

@@ -14,9 +14,9 @@ const Login = () => {
 
   const {push} = useRouter()
 
-  const fromHandler = ({ password , username}) => {
-    console.log(username)
+  const formHandler = ({ password , username}) => {
     localStorage.setItem('login', true);
+   
     push('/')
   };
 
@@ -51,7 +51,7 @@ const Login = () => {
             </div>
             <div className=" w-full md:w-1/2 px-16 py-14">
               <h1 className="mb-3">ورود</h1>
-              <form onSubmit={handleSubmit(fromHandler)}>
+              <form onSubmit={handleSubmit(formHandler)}>
                 <div className="grid grid-cols-1">
                   <input
                     className=" bg-slate-300 p-1 text-sm  md:text-lg rounded-md outline-none mb-3 border focus:border-white"
