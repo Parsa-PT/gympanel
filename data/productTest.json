@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "title" : "Whay1",
+        "title" : "Whey1",
         "img" : "/assets/images/shopimg/whay.jpeg",
         "slug" : "whay-1",
         "price" : 700,
@@ -10,7 +10,7 @@
     },
     {
         "id" : 2,
-        "title" : "Whay2",
+        "title" : "Whey2",
         "img" : "/assets/images/shopimg/whay.jpeg",
         "slug" : "whay-2",
         "price" : 600,
@@ -19,7 +19,7 @@
     },
     {
         "id" : 3,
-        "title" : "Whay3",
+        "title" : "Whey3",
         "img" : "/assets/images/shopimg/whay.jpeg",
         "slug" : "whay-3",
         "price" : 500,
@@ -28,7 +28,7 @@
     },
     {
         "id" : 4,
-        "title" : "Whay4",
+        "title" : "Whey4",
         "img" : "/assets/images/shopimg/whay.jpeg",
         "slug" : "whay-4",
         "price" : 400,
@@ -37,7 +37,7 @@
     },
     {
         "id" : 5,
-        "title" : "Whay5",
+        "title" : "Whey5",
         "img" : "/assets/images/shopimg/whay.jpeg",
         "slug" : "whay-5",
         "price" : 350,

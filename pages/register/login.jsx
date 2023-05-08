@@ -45,7 +45,7 @@ const Login = () => {
               >
                 <Image className=" w-[4rem] md:w-[8rem] mt-10 mb-2 md:mt-0" src={logo} />
                 <p className="text-white md:text-2xl mb-10 md:mb-0">
-                  به پنل ورزشی باشگاه رگلت خوشامدید
+                  به پنل ورزشی باشگاه رگلت خوش امدید
                 </p>
               </div>
             </div>
