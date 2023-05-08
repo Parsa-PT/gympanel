@@ -19,14 +19,14 @@ const Profile = () => {
   const handleData = (data)=>{
     console.table(data)
   }
-  const handleDragOver = (e)=>{
+  // const handleDragOver = (e)=>{
     
    
-  }
-  const handleOnDrag = (e)=>{
+  // }
+  // const handleOnDrag = (e)=>{
    
-    console.log(e)
-  }
+  //   console.log(e)
+  // }
 
   const handleClick = ()=>{
     inputRef.current()

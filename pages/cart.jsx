@@ -9,7 +9,6 @@ const cart = () => {
     cart: { cartItems },
   } = state;
 
-  console.log(cartItems);
 
   function removeHandler(item) {
     dispatch({ type: "REMOVE_ITEM", payload: item });
