@@ -167,7 +167,7 @@ const SideNavbar = () => {
               </div>
 
               <div className="w-full flex justify-center items-center flex-col">
-                <h2>اقا رضا</h2>
+                <h2>{name}</h2>
                 <hr className=" bg-black h-1 rounded-md w-1/2 mb-2" />
                 <h3>09357676767</h3>
                 <div className="flex">
