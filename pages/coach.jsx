@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import photo from "../public/assets/images/shopimg/bodybuilding_specialist_mobile_hero_image_2x.jpeg";
 
-const coach = () => {
+const Coach = () => {
   return (
     <div>
       <Layout title={"coachinfo"}>
@@ -37,4 +37,4 @@ const coach = () => {
   );
 };
 
-export default coach;
+export default Coach;
