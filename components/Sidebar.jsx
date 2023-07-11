@@ -171,7 +171,7 @@ const SideNavbar = () => {
                 <hr className=" bg-black h-1 rounded-md w-1/2 mb-2" />
                 <h3>09357676767</h3>
                 <div className="flex">
-                  <BiLogOut className="ml-1 cursor-pointer hover:text-red-600" />
+                  <BiLogOut onClick={leaveHandler} className="ml-1 cursor-pointer hover:text-red-600" />
                   <Link href="/profile">
                     {" "}
                     <FaUserEdit className=" cursor-pointer" />{" "}
