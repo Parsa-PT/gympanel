@@ -6,7 +6,8 @@ import { BsShop } from "react-icons/bs";
 import { GiHotMeal, GiTakeMyMoney } from "react-icons/gi";
 import { FaUserEdit, FaShoppingCart } from "react-icons/fa";
 import { BiLogOut } from "react-icons/bi";
-import profile from "../public/assets/images/166yearsold.jpeg";
+import profile from "../public/assets/images/young-bearded-man-with-striped-shirt_273609-5677.jpg
+";
 import Link from "next/link";
 import Image from "next/image";
 import { Store } from "@/context/cart";
