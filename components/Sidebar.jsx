@@ -91,7 +91,7 @@ const SideNavbar = () => {
               <hr className=" mb-4 w-full " />
             </div>
 
-            <div className="flex flex-col justify-center mb-[7rem]  md:mb-[15rem]">
+            <div className="flex flex-col justify-center mb-[4rem]  md:mb-[5rem] lg:mb-[15rem]">
               <ul>
                 <li className="w-full mb-3 p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
                   <ImHome className="ml-1 w-5 h-5" />
@@ -186,7 +186,7 @@ const SideNavbar = () => {
               <hr className=" mb-4 w-full " />
             </div>
 
-            <div className="flex flex-col justify-center mb-[7rem] sm:mb-[10rem]  md:mb-[15rem]">
+            <div className="flex flex-col justify-center mb-[4rem] sm:mb-[10rem]  md:mb-[5rem] lg:mb-[15rem]">
               <ul>
                 <li className="w-full mb-3 p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
                   <ImHome className="ml-1 w-5 h-5" />
