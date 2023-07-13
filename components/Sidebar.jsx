@@ -125,6 +125,12 @@ const SideNavbar = () => {
                     مربی
                   </Link>
                 </li>
+               <li className="w-full mb-3 p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
+                  <ImUser className="ml-1 w-5 h-5" />
+                  <Link className="w-full text-lg" href="/coach">
+                    انجام میدم
+                  </Link>
+                </li>
                 
                 <li className="w-full  p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
                   <FaShoppingCart className="ml-1 w-5 h-6" />
@@ -218,6 +224,13 @@ const SideNavbar = () => {
                   <ImUser className="ml-1 w-5 h-5" />
                   <Link className="w-full text-lg" href="/coach">
                     مربی
+                  </Link>
+                </li>
+
+                 <li className="w-full mb-3 p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
+                  <ImUser className="ml-1 w-5 h-5" />
+                  <Link className="w-full text-lg" href="/coach">
+                    انجام میدم
                   </Link>
                 </li>
                 <li className="w-full  p-2 pt-3 bg-slate-100 rounded-3xl flex cursor-pointer shadow-md transition ease-out duration-75 hover:scale-95 ">
